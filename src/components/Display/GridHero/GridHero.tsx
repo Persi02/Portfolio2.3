@@ -15,7 +15,7 @@ function GridHero() {
     let gridEight = useRef<null>(null)
     let tl = gsap.timeline()
     useEffect(() => {
-        tl.to(gridOne.current, { background: 'transparent', duration: 2 }, 3).to(gridTwo.current, { background: 'transparent', duration: 1 }, 3.2).to(gridThree.current, { background: 'transparent', duration: 1 }, 3.4).to(gridFour.current, { background: 'transparent', duration: 1 }, 3.6).to(gridFive.current, { background: 'transparent', duration: 1 }, 3.8).to(gridSix.current, { background: 'transparent', duration: 1 }, 4).to(gridSeven.current, { background: 'transparent', duration: 1 }, 4.2).to(gridEight.current, { background: 'transparent', duration: 1 }, 4.4)
+        tl.to(gridOne.current, { background: 'transparent', duration: 0.5 }, 0.5).to(gridTwo.current, { background: 'transparent', duration: 0.5 }, 0.6).to(gridThree.current, { background: 'transparent', duration: 0.5 }, 0.7).to(gridFour.current, { background: 'transparent', duration: 0.5 }, 0.8).to(gridFive.current, { background: 'transparent', duration: 0.5 }, 0.9).to(gridSix.current, { background: 'transparent', duration: 0.5 }, 1).to(gridSeven.current, { background: 'transparent', duration: 0.5 }, 1.1).to(gridEight.current, { background: 'transparent', duration: 0.5 }, 1.2)
     }, [tl])
 
     return (

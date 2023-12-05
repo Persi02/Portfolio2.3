@@ -52,14 +52,14 @@ function HomePage() {
     let tl = gsap.timeline();
 
     useEffect(() => {
-        gsap.fromTo('body', { height: '100vh', overflowY: 'hidden' }, { height: 'auto', overflowY: 'auto', delay: 5 })
+        gsap.fromTo('body', { height: '100vh', overflowY: 'hidden' }, { height: 'auto', overflowY: 'auto', delay: 1.2 })
     }, [])
 
     useEffect(() => {
         if (title.current) {
             const title1 = title.current?.firstElementChild;
             const title2 = title.current?.lastElementChild;
-            tl.fromTo(title1, { x: -400, opacity: 0, ease: Power3.easeOut }, { x: 0, opacity: 1, ease: Power3.easeOut, duration: 1.5 }, 5).fromTo(title2, { x: 400, opacity: 0, ease: Power3.easeOut }, { x: 0, opacity: 1, duration: 1.3 }, 5).fromTo('.intro-name', { y: 44, opacity: 0 }, { y: 0, opacity: 1 }, 5).fromTo('.logo', { x: 300, opacity: 0 }, { x: 0, opacity: 1 }, 5).fromTo(['.header', '.wrap_btn-hero', '.wrap_button-scroll'], { opacity: 0 }, { opacity: 1, duration: 1 }, 5)
+            tl.fromTo(title1, { x: -400, opacity: 0, ease: Power3.easeOut }, { x: 0, opacity: 1, ease: Power3.easeOut, duration: 1 }, 1.2).fromTo(title2, { x: 400, opacity: 0, ease: Power3.easeOut }, { x: 0, opacity: 1, duration: 0.8 }, 1.2).fromTo('.intro-name', { y: 44, opacity: 0 }, { y: 0, opacity: 1 }, 1.2).fromTo('.logo', { x: 300, opacity: 0 }, { x: 0, opacity: 1 }, 1.2).fromTo(['.header', '.wrap_btn-hero', '.wrap_button-scroll'], { opacity: 0 }, { opacity: 1, duration: 1 }, 1.2)
         }
 
 
@@ -167,7 +167,7 @@ function HomePage() {
 
                                 <p className='body_textgm'>Email &nbsp;&nbsp;: <span>andriamananandroh@gmail.com</span></p>
                                 <p className='body_textgm'>Education &nbsp;&nbsp; :<span>Developer front JS ,
-                                    SAHA Academique  (2023 )</span></p>
+                                    SAHA Academique  (2023)</span></p>
                                 <p className='body_textgm'>Diplôme &nbsp;&nbsp;:<span> Bacc +2 électronique informatique</span></p>
                                 <p className='body_textgm'>Phone &nbsp;&nbsp;:<span>+261346810380</span></p>
                                 <p className='body_textgm'>City &nbsp;&nbsp;:<span>Antananarivo/Madagascar</span></p>

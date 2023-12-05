@@ -214,6 +214,16 @@
         display: none
     }
 
+    svg:hover {
+        circle {
+            fill: #000
+        }
+
+        path {
+            fill: #FFF
+        }
+    }
+
     div {
         @apply flex gap-4;
 
