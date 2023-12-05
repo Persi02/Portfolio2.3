@@ -19,7 +19,7 @@ body {
 }
 
 .wrap {
-    padding: 0 16px;
+    @apply px-4;
 }
 
 .h1 {
@@ -84,7 +84,7 @@ h2 {
 
 @screen sm {
     .wrap {
-        padding: 0 30px;
+        @apply px-8;
     }
 
     .h1 {
@@ -105,7 +105,7 @@ h2 {
 
 @screen lg {
     .wrap {
-        padding: 0 50px;
+        @apply px-12;
     }
 
     h2 {
@@ -117,7 +117,7 @@ h2 {
 @screen 2xl {
 
     .wrap {
-        padding: 0 60px;
+        @apply px-16;
     }
 
     .h1 {

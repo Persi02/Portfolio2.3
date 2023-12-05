@@ -225,7 +225,7 @@ function HomePage() {
                 <section className='contact' id="contact">
                     <SectionTitle text='Contact' className='panel panel_contact' />
                     <div className="body_contact wrap panel" id='down'>
-                        <div className="wrap_sociaux">
+                        <div className="wrap_sociaux wrap">
                             <div className="lieu">
                                 <div>
                                     <div className="icon_lieu"><LieuIcon /></div>

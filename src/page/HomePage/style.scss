@@ -43,10 +43,6 @@
     z-index: 100;
     mix-blend-mode: difference;
 
-    .btn-scroll1 {
-        // background-color: red;
-    }
-
     .btn-scroll2 {
         display: none;
     }
@@ -184,6 +180,7 @@
 
     .wrap_sociaux {
         @apply flex flex-col w-full;
+        padding: 0;
 
         div {
             margin-bottom: 0;
@@ -381,6 +378,7 @@
 
         .wrap_sociaux {
             @apply absolute pt-12 flex-row items-start top-0 left-0 gap-0 justify-between;
+            padding: 40px 48px;
 
             div {
                 margin-bottom: 0;
@@ -474,6 +472,12 @@
             &-name {
                 max-width: 313px;
             }
+        }
+    }
+
+    .body_contact {
+        .wrap_sociaux {
+            padding: 40px 64px;
         }
     }
 
