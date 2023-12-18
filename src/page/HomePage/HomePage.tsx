@@ -166,7 +166,7 @@ function HomePage() {
                             <div className="info">
 
                                 <p className='body_textgm'>Email &nbsp;&nbsp;: <span>andriamananandroh@gmail.com</span></p>
-                                <p className='body_textgm'>Education &nbsp;&nbsp; :<span>Developer front JS ,
+                                <p className='body_textgm'>Education &nbsp;&nbsp; :<span>Developer front end,
                                     SAHA Academique  (2023)</span></p>
                                 <p className='body_textgm'>Diplôme &nbsp;&nbsp;:<span> Bacc +2 électronique informatique</span></p>
                                 <p className='body_textgm'>Phone &nbsp;&nbsp;:<span>+261346810380</span></p>
@@ -224,7 +224,7 @@ function HomePage() {
 
                 <section className='contact' id="contact">
                     <SectionTitle text='Contact' className='panel panel_contact' />
-                    <div className="body_contact wrap panel" id='down'>
+                    <div className="body_contact wrap" id='down'>
                         <div className="wrap_sociaux wrap">
                             <div className="lieu">
                                 <div>
