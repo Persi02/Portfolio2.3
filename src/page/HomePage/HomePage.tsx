@@ -9,13 +9,6 @@ import SectionTitle from '../../components/Display/SectionTitle/SectionTitle';
 import GridHero from '../../components/Display/GridHero/GridHero';
 import figma from '../../assets/image/figma.jpg'
 import git from '../../assets/image/git.jpg'
-import Html from '../../assets/image/html.jpg'
-import Css from '../../assets/image/css.jpg'
-import Tailwind from '../../assets/image/tailwin.jpg'
-import Sass from '../../assets/image/sass.jpg'
-import Bootstrap from '../../assets/image/bootstrap.jpg'
-import Iconreact from '../../assets/image/react.jpg'
-import Javascript from '../../assets/image/javascript.jpg'
 import LieuIcon from '../../Icons/LieuIcon';
 import EmailIcon from '../../Icons/EmailIcon';
 import PhoneIcon from '../../Icons/PhoneIcon';
@@ -53,20 +46,6 @@ function HomePage() {
 
     useEffect(() => {
         gsap.fromTo('body', { height: '100vh', overflowY: 'hidden' }, { height: 'auto', overflowY: 'auto', delay: 1.2 })
-    }, [])
-
-    useEffect(() => {
-        if (title.current) {
-            const title1 = title.current?.firstElementChild;
-            const title2 = title.current?.lastElementChild;
-            tl.fromTo(title1, { x: -400, opacity: 0, ease: Power3.easeOut }, { x: 0, opacity: 1, ease: Power3.easeOut, duration: 1 }, 1.2).fromTo(title2, { x: 400, opacity: 0, ease: Power3.easeOut }, { x: 0, opacity: 1, duration: 0.8 }, 1.2).fromTo('.intro-name', { y: 44, opacity: 0 }, { y: 0, opacity: 1 }, 1.2).fromTo('.logo', { x: 300, opacity: 0 }, { x: 0, opacity: 1 }, 1.2).fromTo(['.header', '.wrap_btn-hero', '.wrap_button-scroll'], { opacity: 0 }, { opacity: 1, duration: 1 }, 1.2)
-        }
-
-
-
-    }, [tl])
-    useEffect(() => {
-
         wordAnimation('.panel_about .about_title', '.panel_about')
         wordAnimation('.panel_skills .about_title', '.panel_skills')
         wordAnimation('.panel_contact .about_title', '.panel_contact')
@@ -79,9 +58,6 @@ function HomePage() {
         wordAnimation('.form_contact', '.body_contact')
         cursorAnim()
 
-
-    }, [])
-    useEffect(() => {
         let ctx = gsap.context(() => {
 
             const panels = document.querySelectorAll<HTMLElement>('.panel');
@@ -95,9 +71,13 @@ function HomePage() {
             });
 
         });
+        if (title.current) {
+            const title1 = title.current?.firstElementChild;
+            const title2 = title.current?.lastElementChild;
+            tl.fromTo(title1, { x: -400, opacity: 0, ease: Power3.easeOut }, { x: 0, opacity: 1, ease: Power3.easeOut, duration: 1 }, 1.2).fromTo(title2, { x: 400, opacity: 0, ease: Power3.easeOut }, { x: 0, opacity: 1, duration: 0.8 }, 1.2).fromTo('.intro-name', { y: 44, opacity: 0 }, { y: 0, opacity: 1 }, 1.2).fromTo('.logo', { x: 300, opacity: 0 }, { x: 0, opacity: 1 }, 1.2).fromTo(['.header', '.wrap_btn-hero', '.wrap_button-scroll'], { opacity: 0 }, { opacity: 1, duration: 1 }, 1.2)
+        }
         return () => ctx.revert();
-    }, [])
-
+    }, [tl])
 
     return (
         <>
@@ -195,25 +175,26 @@ function HomePage() {
                                 <h3 className='second-h3 '>Web developer</h3>
                                 <div className="work_developer">
                                     <div className="wrap_skills">
-                                        <img src={Html} alt='html' />
+                                        <p>HTML</p>
                                     </div>
                                     <div className="wrap_skills">
-                                        <img src={Css} alt='css' />
+                                        <p>CSS</p>
                                     </div>
                                     <div className="wrap_skills">
-                                        <img src={Tailwind} alt='Tailwind' />
+                                        <p>Tailwind</p>
+                                    </div>
+
+                                    <div className="wrap_skills">
+                                        <p>Sass</p>
                                     </div>
                                     <div className="wrap_skills">
-                                        <img src={Bootstrap} alt='Bootstrap' />
+                                        <p>Javascript</p>
                                     </div>
                                     <div className="wrap_skills">
-                                        <img src={Sass} alt='Sass' />
+                                        <p>React.js</p>
                                     </div>
                                     <div className="wrap_skills">
-                                        <img src={Javascript} alt='Javascript' />
-                                    </div>
-                                    <div className="wrap_skills">
-                                        <img src={Iconreact} alt='Iconreact' />
+                                        <p>Next.js</p>
                                     </div>
                                 </div>
                             </div>
