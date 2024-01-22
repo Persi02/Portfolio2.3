@@ -7,8 +7,6 @@ import profil from '../../assets/image/profil.png'
 import GridBody from '../../components/Display/gridBody/GridBody';
 import SectionTitle from '../../components/Display/SectionTitle/SectionTitle';
 import GridHero from '../../components/Display/GridHero/GridHero';
-import figma from '../../assets/image/figma.jpg'
-import git from '../../assets/image/git.jpg'
 import LieuIcon from '../../Icons/LieuIcon';
 import EmailIcon from '../../Icons/EmailIcon';
 import PhoneIcon from '../../Icons/PhoneIcon';
@@ -163,11 +161,15 @@ function HomePage() {
                         <div className="first_skills">
                             <div className="design">
                                 <h3 className='second-h3 '>UX/UI design</h3>
-                                <img src={figma} alt='figma' />
+                                <div className="wrap_skills">
+                                    <p>Figma</p>
+                                </div>
                             </div>
                             <div className="outils">
                                 <h3 className='second-h3 '>Outils</h3>
-                                <img src={git} alt='git' />
+                                <div className="wrap_skills">
+                                    <p>Git</p>
+                                </div>
                             </div>
                         </div>
                         <div className="second_skills">
