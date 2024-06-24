@@ -6,6 +6,7 @@
 
      .menu-navigation {
          @apply flex text-black;
+         gap: 5px;
 
          flex-direction: column;
          font-family: 'Roboto', sans-serif;

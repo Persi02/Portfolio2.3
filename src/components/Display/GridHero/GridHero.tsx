@@ -5,15 +5,15 @@ import { gsap } from "gsap";
 
 
 function GridHero() {
-    let gridOne = useRef<null>(null)
-    let gridTwo = useRef<null>(null)
-    let gridThree = useRef<null>(null)
-    let gridFour = useRef<null>(null)
-    let gridFive = useRef<null>(null)
-    let gridSix = useRef<null>(null)
-    let gridSeven = useRef<null>(null)
-    let gridEight = useRef<null>(null)
-    let tl = gsap.timeline()
+    const gridOne = useRef<null>(null)
+    const gridTwo = useRef<null>(null)
+    const gridThree = useRef<null>(null)
+    const gridFour = useRef<null>(null)
+    const gridFive = useRef<null>(null)
+    const gridSix = useRef<null>(null)
+    const gridSeven = useRef<null>(null)
+    const gridEight = useRef<null>(null)
+    const tl = gsap.timeline()
     useEffect(() => {
         tl.to(gridOne.current, { background: 'transparent', duration: 0.5 }, 0.5).to(gridTwo.current, { background: 'transparent', duration: 0.5 }, 0.6).to(gridThree.current, { background: 'transparent', duration: 0.5 }, 0.7).to(gridFour.current, { background: 'transparent', duration: 0.5 }, 0.8).to(gridFive.current, { background: 'transparent', duration: 0.5 }, 0.9).to(gridSix.current, { background: 'transparent', duration: 0.5 }, 1).to(gridSeven.current, { background: 'transparent', duration: 0.5 }, 1.1).to(gridEight.current, { background: 'transparent', duration: 0.5 }, 1.2)
     }, [tl])

@@ -24,6 +24,7 @@ const cursorAnim = () => {
     })
     if (para) {
 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         para.forEach((p: any) => {
             p.addEventListener('mouseenter', function () {
 
@@ -65,6 +66,7 @@ const cursorAnim = () => {
         })
     }
     if (btn) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         btn.forEach((p: any) => {
             p.addEventListener('mouseenter', function () {
 
@@ -85,6 +87,7 @@ const cursorAnim = () => {
         })
     }
     if (secondTitle) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         secondTitle.forEach((p: any) => {
             p.addEventListener('mouseenter', function () {
 

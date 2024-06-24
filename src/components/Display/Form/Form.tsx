@@ -100,11 +100,11 @@ function Form() {
 
     return (
         <form action="" className='form_contact'>
-            <TextField label="Your Name" variant="standard" onChange={handleChangeName} name='name' fullWidth value={name_i} />
-            <TextField label="Your Email" variant="standard" onChange={handleChangeEmail} name='email' fullWidth value={email_i} />
-            <TextField label="Your Subject" variant="standard" fullWidth name='subject' onChange={handleChangeSubject} value={subject_i} />
+            <TextField label="Votre nom" variant="standard" onChange={handleChangeName} name='name' fullWidth value={name_i} />
+            <TextField label="Votre Email" variant="standard" onChange={handleChangeEmail} name='email' fullWidth value={email_i} />
+            <TextField label="votre Subject" variant="standard" fullWidth name='subject' onChange={handleChangeSubject} value={subject_i} />
             <TextField
-                label="Your message"
+                label="votre message"
                 multiline
                 rows={5}
                 variant="standard"

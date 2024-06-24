@@ -11,7 +11,7 @@ interface Props {
 
 function Header({ className }: Props) {
 
-    let header = useRef<HTMLElement | null>(null);
+    const header = useRef<HTMLElement | null>(null);
 
     useEffect(() => {
         navAnimation(header.current);

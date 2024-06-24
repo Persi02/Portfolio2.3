@@ -36,11 +36,11 @@ gsap.registerPlugin(ScrollTrigger)
 
 function HomePage() {
 
-    let title = useRef<HTMLHeadingElement | null>(null)
-    let about = useRef<HTMLDivElement | null>(null);
+    const title = useRef<HTMLHeadingElement | null>(null)
+    const about = useRef<HTMLDivElement | null>(null);
 
 
-    let tl = gsap.timeline();
+    const tl = gsap.timeline();
 
     useEffect(() => {
         gsap.fromTo('body', { height: '100vh', overflowY: 'hidden' }, { height: 'auto', overflowY: 'auto', delay: 1.2 })
@@ -56,7 +56,7 @@ function HomePage() {
         wordAnimation('.form_contact', '.body_contact')
         cursorAnim()
 
-        let ctx = gsap.context(() => {
+        const ctx = gsap.context(() => {
 
             const panels = document.querySelectorAll<HTMLElement>('.panel');
             panels.forEach((panel) => {
@@ -106,7 +106,7 @@ function HomePage() {
                     <div className='intro wrap' id='intro'>
                         <div className='intro-name'>
                             <h3 className='second-h3'>Persi</h3>
-                            <Text tag='p' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi saepe maxime' color="#817474" className='body_text' />
+                            <Text tag='p' text="Thank you for visiting my portfolio. I think it will help you get to know me better." color="#817474" className='body_text' />
                         </div>
                         <LogoIcons className='logo' />
                     </div>
@@ -116,7 +116,7 @@ function HomePage() {
                             <Link to='down'
                                 smooth={true}
                                 duration={500} >
-                                <Button text='Contact Me' className='btn-lg' />
+                                <Button text='Contact me' className='btn-lg' />
                             </Link>
                             <NavLink to={CV} target='_blank'>
                                 <Button text='Show CV' className='btn-lg btn-w' />
@@ -132,7 +132,7 @@ function HomePage() {
                     <div className="body_about wrap panel ">
                         <GridBody />
                         <div className="first_about">
-                            <h3 className='first-h3'>Hello I am Pérsi</h3>
+                            <h3 className='first-h3'>Bonjour, je suis Pérsi</h3>
                             <Text tag='p' text=' Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi saepe maxime pariatur rem non consequatur
                                 unde quas suscipit ea placeat quia cumque laudantium assumenda dolore voLorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi saepe maxime pariatur rem non consequatur
                                 unde quas suscipit ea placeat quia cumque laudantium assumenda dolore voluptatum ut ullam! Enim?' className='body_textgm' />
@@ -155,7 +155,7 @@ function HomePage() {
                     </div>
                 </section>
                 <section className='myskills ' id='mySkills'>
-                    <SectionTitle text='My Skills' className='panel panel_skills' />
+                    <SectionTitle text='My skills' className='panel panel_skills' />
                     <div className="body_skills  wrap panel">
                         <GridBody />
                         <div className="first_skills">
@@ -207,7 +207,7 @@ function HomePage() {
 
                 <section className='contact' id="contact">
                     <SectionTitle text='Contact' className='panel panel_contact' />
-                    <div className="body_contact wrap" id='down'>
+                    <div className="body_contact wrap">
                         <div className="wrap_sociaux wrap">
                             <div className="lieu">
                                 <div>
@@ -223,14 +223,14 @@ function HomePage() {
                                 <div>
                                     <div className="icon_lieu"><PhoneIcon /></div>
 
-                                    <p className='body_text'>Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : +261346810380</p>
+                                    <p className='body_text'>Télephone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : +261346810380</p>
                                 </div>
 
 
 
                             </div>
                             <div className="sociaux">
-                                <h3 className='second-h3'>Follow me on social media</h3>
+                                <h3 className='second-h3'>Suivez-moi sur les réseaux sociaux</h3>
                                 <div>
                                     <NavLink to='https://www.facebook.com/hernjakaandri?locale=fr_FR'>
                                         <FacebookIcon />
@@ -254,7 +254,7 @@ function HomePage() {
                         <Form />
                         <div className="hr">
                             <hr />
-                            <p >Portfolio@Pérsi2023</p>
+                            <p id='down'>Portfolio@Pérsi2023</p>
                         </div>
                     </div>
                 </section>
